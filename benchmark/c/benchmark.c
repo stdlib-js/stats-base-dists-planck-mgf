@@ -92,31 +92,30 @@ static double random_uniform( const double min, const double max ) {
 * @return elapsed time in seconds
 */
 static double benchmark( void ) {
+	double lambda[ 100 ];
 	double elapsed;
-	double t[100];
-	double lambda[100];
+	double t[ 100 ];
+	double start;
 	double y;
 	int i;
 
 	for ( i = 0; i < 100; i++ ) {
-		t[i] = random_uniform( 0.0, 10.0 );
-		lambda[i] = random_uniform( 0.1, 10.0 );
+		t[ i ] = random_uniform( 0.0, 10.0 );
+		lambda[ i ] = random_uniform( 0.1, 10.0 );
 	}
 
-	elapsed = tic();
+	start = tic();
 	for ( i = 0; i < ITERATIONS; i++ ) {
-		y = stdlib_base_dists_planck_mgf( t[i % 100], lambda[i % 100] );
+		y = stdlib_base_dists_planck_mgf( t[ i%100 ], lambda[ i%100 ] );
 		if ( isnan( y ) ) {
 			printf( "should not return NaN\n" );
 			break;
 		}
 	}
-	elapsed = tic() - elapsed;
-
+	elapsed = tic() - start;
 	if ( isnan( y ) ) {
 		printf( "should not return NaN\n" );
 	}
-
 	return elapsed;
 }
 
