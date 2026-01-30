@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/stats-base-dists-planck-mgf",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Planck (discrete exponential) distribution moment-generating function (MGF).",
   "license": "Apache-2.0",
   "author": {
