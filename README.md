@@ -162,14 +162,6 @@ logEachMap( 't: %0.4f, λ: %0.4f, M_X(t;λ): %0.4f', t, lambda, mgf );
 
 <!-- /.examples -->
 
-<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
-
-<section class="references">
-
-</section>
-
-<!-- /.references -->
-
 <!-- C interface documentation. -->
 
 * * *
@@ -266,6 +258,14 @@ int main( void ) {
 
 <!-- /.c -->
 
+<!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="references">
+
+</section>
+
+<!-- /.references -->
+
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
@@ -313,8 +313,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-base-dists-planck-mgf.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-base-dists-planck-mgf
 
-[test-image]: https://github.com/stdlib-js/stats-base-dists-planck-mgf/actions/workflows/test.yml/badge.svg?branch=v0.1.1
-[test-url]: https://github.com/stdlib-js/stats-base-dists-planck-mgf/actions/workflows/test.yml?query=branch:v0.1.1
+[test-image]: https://github.com/stdlib-js/stats-base-dists-planck-mgf/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/stats-base-dists-planck-mgf/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-base-dists-planck-mgf/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-base-dists-planck-mgf?branch=main
